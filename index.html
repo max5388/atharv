@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<title>बिल</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container" id="bill">
+
+<!-- Header -->
+<div class="header">
+
+    <div class="title">
+        <h1>श्री विश्वकर्मा सेंटरींग प्लेट्स सप्लायर्स</h1>
+        <p>मो.9422790206</p> <p>7020968813</p>
+    </div>
+
+    <div class="logo">
+        <img src="logo2.jpeg">
+    </div>
+
+</div>
+
+
+<!-- Info -->
+<div class="info">
+
+    <input type="text" id="name" placeholder="ग्राहकाचे नाव">
+
+    <input type="text" id="phone" placeholder="मोबाईल नंबर">
+
+    <input type="text" id="phone" placeholder="गाव">
+
+    <input type="text" id="billno" placeholder="बिल नंबर">
+
+    <input type="text" id="holder" placeholder="साईड">
+    <input type="date" id="date">
+
+</div>
+
+
+<!-- Table -->
+<table>
+
+<thead>
+<tr>
+    <th>तपशील</th>
+    <th>संख्या</th>
+    <th>दर (₹)</th>
+    <th>एकूण (₹)</th>
+    <th>काढा</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+
+<!-- Buttons -->
+<div class="buttons">
+    <button onclick="addRow()">नवीन ओळ जोडा</button>
+</div>
+
+
+<!-- Total -->
+<div class="total">
+    एकूण रक्कम : ₹ <span id="grandTotal">0</span>
+</div>
+
+
+<!-- Rules -->
+<div class="rules">
+
+<h3>नियम व अटी :</h3>
+
+<ol>
+<li>प्लेट घेतेवेळी सिक्युरिटीसाठी स्टॅम्प / चेक घेतले जातील.</li>
+<li>एका महिन्याचे भाडे अॅडव्हान्स जमा करावे.</li>
+<li>प्लेट खराब / मोडतोड झाल्यास जबाबदारी ग्राहकाची राहील.</li>
+<li>भाडे वेळेवर न भरल्यास अतिरिक्त चार्ज लागेल.</li>
+<li>प्लेटला ऑईल लावून परत द्यावी.</li>
+<li>प्लेट वेळेवर जमा करणे बंधनकारक आहे.</li>
+</ol>
+
+</div>
+
+
+<!-- Signature -->
+<div class="sign">
+
+<div>
+    <p>माल घेणाऱ्याची सही</p>
+    <hr>
+</div>
+
+<div>
+    <p>मालक</p>
+    <hr>
+</div>
+
+<div>
+    <p>इंजिनियर</p>
+    <hr>
+</div>
+
+</div>
+
+
+<!-- Action -->
+<div class="buttons">
+    <button onclick="saveBill()">सेव्ह</button>
+    <button onclick="window.print()">प्रिंट</button>
+</div>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Noto Sans Devanagari', sans-serif;
+}
+
+body{
+    background:#f4c86b;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    background:#fff8e1;
+    margin:auto;
+    padding:25px;
+    border:2px solid #b8860b;
+    border-radius:10px;
+}
+
+/* Header */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2px solid black;
+    padding-bottom:10px;
+}
+
+.title h1{
+    font-size:22px;
+}
+
+.logo img{
+    width:150px;
+}
+
+
+/* Info */
+.info{
+    margin:20px 0;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.info input{
+    padding:7px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid black;
+    padding:7px;
+    text-align:center;
+}
+
+th{
+    background:#e5b54c;
+}
+
+
+/* Buttons */
+.buttons{
+    text-align:center;
+    margin:15px 0;
+}
+
+button{
+    padding:8px 18px;
+    background:#c89a2b;
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#a57f20;
+}
+
+
+/* Total */
+.total{
+    text-align:right;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+
+/* Rules */
+.rules{
+    margin-top:20px;
+    font-size:14px;
+}
+
+.rules h3{
+    margin-bottom:5px;
+}
+
+.rules ol{
+    padding-left:20px;
+}
+
+
+/* Signature */
+.sign{
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+    text-align:center;
+}
+
+.sign div{
+    width:30%;
+}
+
+.sign hr{
+    margin-top:25px;
+    border:1px solid black;
+}
